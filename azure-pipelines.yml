@@ -42,7 +42,7 @@ stages:
       dockerfilePath: $(dockerfilePath)
       tag: $(tag)
       pool:
-        vmImage: 'windows-latest'
+        vmImage: 'ubuntu-latest'
 
 - stage: Deploy
   displayName: Deploy stage
