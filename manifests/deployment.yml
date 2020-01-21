@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: soccerjoshjpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: soccerjoshjpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: soccerjoshjpipelinesjavascriptdocker 
+          image: javascriptpipelineacr.azurecr.io/soccerjoshjpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
