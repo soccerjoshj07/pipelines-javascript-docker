@@ -41,6 +41,8 @@ stages:
       containerRegistry: $(containerRegistry)
       dockerfilePath: $(dockerfilePath)
       tag: $(tag)
+      pool:
+        vmImage: 'windows-latest'
 
 - stage: Deploy
   displayName: Deploy stage
