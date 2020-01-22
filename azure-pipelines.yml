@@ -40,9 +40,7 @@ stages:
       imageRepository: $(imageRepository)
       containerRegistry: $(containerRegistry)
       dockerfilePath: $(dockerfilePath)
-      tag: | 
-        $(tag)
-        'latest'
+      tag: $(tag)
       pool:
         vmImage: $(vmImageName)
 
