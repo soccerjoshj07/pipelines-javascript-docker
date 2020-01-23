@@ -28,8 +28,7 @@ variables:
   vmImageName: 'ubuntu-latest'
   
   # Name of the new namespace being created to deploy the PR changes.
-  branchName: $(system.pullRequest.sourceBranch)
-  k8sNamespaceForPR: $(echo "$(branchName)" | tr "[:upper:]" "[:lower:]")
+  k8sNamespaceForPR: '$(system.pullRequest.sourceBranch)'
 
 stages:
 - stage: Build
