@@ -10,6 +10,7 @@ resources:
   - repository: templates
     type: git
     name: pipeline-templates
+    ref: refs/heads/lowercase
 
 #- repo: self
     
